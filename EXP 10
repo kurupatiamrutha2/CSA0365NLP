@@ -1,0 +1,13 @@
+words = ["can", "swim"]
+
+tags = ["NN", "VB"]
+
+for i in range(len(words)):
+    if words[i] == "can":
+        tags[i] = "MD"
+
+print(list(zip(words, tags)))
+
+OUTPUT
+
+[('can', 'MD'), ('swim', 'VB')]
