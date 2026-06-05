@@ -1,0 +1,14 @@
+import openai
+
+openai.api_key = "YOUR_API_KEY"
+
+response = openai.Completion.create(
+    model="text-davinci-003",
+    prompt="Artificial Intelligence is",
+    max_tokens=30
+)
+
+print(response.choices[0].text)
+
+OUTPUT
+Artificial Intelligence is transforming the world through automation and innovation.
