@@ -1,0 +1,24 @@
+import random
+
+text = "I love python and python loves coding"
+
+words = text.split()
+
+bigrams = {}
+
+for i in range(len(words)-1):
+    bigrams.setdefault(words[i], []).append(words[i+1])
+
+word = "I"
+
+result = [word]
+
+for _ in range(5):
+    next_word = random.choice(bigrams.get(word, [word]))
+    result.append(next_word)
+    word = next_word
+
+print(" ".join(result))
+
+OUTPUT
+I love python and python loves
