@@ -1,0 +1,15 @@
+from sklearn.feature_extraction.text import TfidfVectorizer
+docs = ["I love python",
+        "Python is easy",
+        "Machine learning"]
+
+vectorizer = TfidfVectorizer()
+
+X = vectorizer.fit_transform(docs)
+
+print(X.toarray())
+
+OUTPUT
+
+TF-IDF Matrix Displayed
+
