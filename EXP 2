@@ -1,0 +1,21 @@
+def fsa(string):
+    state = 0
+
+    for ch in string:
+        if state == 0:
+            state = 1 if ch == 'a' else 0
+        elif state == 1:
+            state = 2 if ch == 'b' else 1
+
+    return state == 2
+
+s = input("Enter string: ")
+
+if fsa(s):
+    print("Accepted")
+else:
+    print("Rejected")
+
+OUTPUT
+Enter string: cab
+Accepted
