@@ -1,0 +1,12 @@
+import nltk
+
+text = "The cat is sleeping"
+
+tokens = nltk.word_tokenize(text)
+
+print(nltk.pos_tag(tokens))
+
+OUTPUT
+
+[('The', 'DT'), ('cat', 'NN'),
+ ('is', 'VBZ'), ('sleeping', 'VBG')]
