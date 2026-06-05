@@ -1,0 +1,7 @@
+text = "John went home. He was tired."
+
+if "He" in text:
+    print("He refers to John")
+
+OUTPUT
+He refers to John
