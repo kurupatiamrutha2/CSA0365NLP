@@ -1,0 +1,9 @@
+text = "Cats are animals. They drink milk."
+
+sentences = text.split(".")
+
+if len(sentences) > 1:
+    print("Text appears coherent")
+
+OUTPUT
+Text appears coherent
