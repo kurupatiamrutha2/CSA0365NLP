@@ -1,0 +1,13 @@
+def plural(noun):
+    if noun.endswith('y'):
+        return noun[:-1] + "ies"
+    else:
+        return noun + "s"
+
+print(plural("city"))
+print(plural("book"))
+
+OUTPUT
+
+cities
+books
