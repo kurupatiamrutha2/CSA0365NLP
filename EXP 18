@@ -1,0 +1,11 @@
+expr = "Human(Socrates)"
+
+predicate = expr.split("(")[0]
+argument = expr.split("(")[1][:-1]
+
+print("Predicate:", predicate)
+print("Argument:", argument)
+
+OUTPUT
+Predicate: Human
+Argument: Socrates
