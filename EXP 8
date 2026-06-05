@@ -1,0 +1,18 @@
+import random
+
+tags = {
+    "dog": ["NN"],
+    "runs": ["VB"],
+    "fast": ["RB"]
+}
+
+sentence = ["dog", "runs", "fast"]
+
+for word in sentence:
+    print(word, random.choice(tags[word]))
+
+OUTPUT
+
+dog NN
+runs VB
+fast RB
