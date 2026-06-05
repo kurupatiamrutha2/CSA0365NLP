@@ -1,0 +1,19 @@
+import re
+
+words = ["running", "beautiful", "cat"]
+
+for word in words:
+    if re.search("ing$", word):
+        tag = "VBG"
+    elif re.search("ful$", word):
+        tag = "JJ"
+    else:
+        tag = "NN"
+
+    print(word, "->", tag)
+
+OUTPUT
+
+running -> VBG
+beautiful -> JJ
+cat -> NN
